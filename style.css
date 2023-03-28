@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600&display=swap');
+/* Viskas */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+    color: aliceblue;
+}
+/* Pats body */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   background-image: url("https://e0.pxfuel.com/wallpapers/542/245/desktop-wallpaper-xiaomi-mi-gaming-laptop-stock-nx.jpg");
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+}
+/* Navigacija/išdėstymas mygtukų */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nuotraukos ir jų tipai */
+img{
+    width: 24%;
+    height: 85%;
+}
+.imagesin3row{
+    width: 32%;
+    height: 85%;
+}
+.avatar{
+    width: 20%;
+    height: 45%;
+    border-radius: 50%;
+}
+.logo {
+    font-size: 2em;
+    color: aliceblue;
+    user-select: none;
+}
+
+/* Mygtukų išvaizda */
+.navigation .btn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/*Mygtukų žibėjimas kai ant ju nusivedi  */
+.navigation .btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Popup */
+.popup {
+	margin: 75px auto;
+	padding: 20px;
+	background: rgba(192, 43, 43, 0.362);
+	border: 5px solid #666;
+	width: 90%;
+  height: 80%;
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+	position: relative;
+}
+
+/*  Navigacija/išdėstymas popup */
+.overlay {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
